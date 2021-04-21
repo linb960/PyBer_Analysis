@@ -14,15 +14,19 @@ The ride_data.csv read into a DataFrame shows four columns: __city, date, fare a
 
 The two DataFrames are then combined into one DataFrame, pyber_data_df, using the city column as the common column.  This DataFrame has the required columns for us to create the summary. These columns then are __city, date, fare, ride_id, driver_count, type__.<br>
 
+<img src="https://github.com/linb960/PyBer_Analysis/blob/main/Resources/fares_by_date.png" width="600" height="300" />
+
+
 ### Pivot Table Creation for Analysis
 
 Since the ulitmate goal of this analysis will be to find the total amount in dollars made for each city type for the first four month of the year 2019 a pivot table is used to help summaraze the date and fare around the type of city.<br>
 First the data from the pyber_data_df is grouped by date for each type of city and the fares are summed. Next the index is reset to flatten out the table.  
 
 ## Results
+
 There is a description of the differences in ride-sharing data among the different city types. Ride-sharing data include the total rides, total drivers, total fares, average fare per ride and driver, and total fare by city type. 
+
 ## Summary
+
 There is a statement summarizing three business recommendations to the CEO for addressing any disparities among the city types. 
 
-<img src="https://github.com/linb960/School_District_Analysis/blob/main/Resources/Per_School_header.png"  />
-<img src="https://github.com/linb960/School_District_Analysis/blob/main/Resources/Initial_Per_School_Summary.png"  />
