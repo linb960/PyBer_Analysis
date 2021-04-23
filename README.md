@@ -19,15 +19,17 @@ The two DataFrames are then combined into one DataFrame, pyber_data_df, using th
 ### Summary DataFrame Creation
 The first goal of this analysis is to summarize the data.  To do this the groupby function is used to get the __Total Rides, Total Drivers and the Total Fares__.  Then two calculations are done to get the  __Average Fare per Ride and Average Fare per Driver__.  These totals and averages are added to a DataFrame and the result are as follows:
 
-<img src="https://github.com/linb960/PyBer_Analysis/blob/main/Resources/pyber_summary_df.png" width="600" height="200" />
+<img src="https://github.com/linb960/PyBer_Analysis/blob/main/Resources/pyber_summary_df.png" width="600" height="125" />
 
 ### Pivot Table Creation for Analysis
 
 Another goal of this analysis is to create the line and the combined data is used to find the total amount in dollars collected for each city type for the first four month of 2019. A pivot table is used to help summaraze the date and fare around the type of city.<br>
 The steps are as follows:
-1. The data from the pyber_data_df is grouped by date for each type of city and the fares are summed. 
-2. The index is reset to flatten out the table.  
-3. 
+1. The data from the pyber_data_df is grouped by date for each type of city and the fares are summed and a new DataFrame, fares_by_date, is created. 
+2. The index is then reset so the pivot function can be used.  
+3. The pivot table is the created with the 'date' as the index, the columns are the city type, and values='fare' to get the total fares for each type of city by the date. 
+<img src="https://github.com/linb960/PyBer_Analysis/blob/main/Resources/fares_pivot_df.png" width="300" height="190" />
+
 
 ## Results
 
